@@ -45,7 +45,7 @@ function Install-EXE
     }
 }
 
-Install-EXE -Url "https://seleniumwebdrivers.blob.core.windows.net/knownfirefoxversion/Firefox%20Installer.exe" -Name "Firefox"
+Install-EXE -Url "https://seleniumwebdrivers.blob.core.windows.net/knownfirefoxversion/FirefoxSetup.exe" -Name "FirefoxSetup.exe" -ArgumentList "-ms"
 
 $path = '{0}\Program Files\Mozilla Firefox\' -f $env:SystemDrive;
 New-Item -path $path -Name 'mozilla.cfg' -Value '//
